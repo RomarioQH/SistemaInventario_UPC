@@ -1,5 +1,8 @@
 package SistemaInventario;
 
+import java.io.BufferedReader;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Ejecutora {
@@ -74,11 +77,10 @@ public class Ejecutora {
             System.out.println("2.- Laptop");
             System.out.println("3.- Impresora");
             System.out.println("4.- Servidor");
-            System.out.println("5.- Mostrar todos los items");
             System.out.println("5.- Salir del menu");
             opcion = scanner.nextInt();
 
-        }while (opcion<1 || opcion>6);
+        }while (opcion<1 || opcion>5);
         switch (opcion){
             case 1: ListarComputadora();
                 break;
@@ -88,9 +90,7 @@ public class Ejecutora {
                 break;
             case 4:ListarServidores();
                 break;
-            case 5: ListarTodo();
-                break;
-            case 6: MenuInicio();
+            case 5: MenuInicio();
                 break;
         }
     }
@@ -224,12 +224,6 @@ public class Ejecutora {
     }
 
     //LISTAR ITEM'S
-    public static void ListarTodo(){
-        for (Equipos_de_Computo item : Equipos_de_Computo.ListaDeEquiposDeComputo){
-            item.ListarTodo();
-        }
-    }
-
     public static void ListarComputadora(){
         for (Equipos_de_Computo comp : Computadora.ListaDeEquiposDeComputo){
             comp.ListarComputadoras();

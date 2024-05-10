@@ -53,8 +53,9 @@ public class  Equipos_de_Computo {
         return stock;
     }
 
-    public void ListarTodo(){}
-    public void ListarComputadoras() {}
+
+    public void ListarComputadoras() {
+    }
     public void ListarLaptop(){}
     public void ListarServidor(){}
     public void ListarImpresora(){}
