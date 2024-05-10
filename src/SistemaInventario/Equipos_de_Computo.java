@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class  Equipos_de_Computo {
+
     //ATRIBUTOS
     private int id;
     private String modelo;
@@ -29,34 +30,65 @@ public class  Equipos_de_Computo {
             ListaDeEquiposDeComputo = new ArrayList<>();
         }
     }
-    
-    //GETTER'S
+    // GETTER'S
     public int getId() {
         return id;
     }
+
     public String getModelo() {
         return modelo;
     }
+
     public String getMarca() {
         return marca;
     }
+
     public int getAno() {
         return ano;
     }
+
     public String getSerial_number() {
         return serial_number;
     }
+
     public String getEstado() {
         return estado;
     }
+
     public int getStock() {
         return stock;
     }
 
-
     public void ListarComputadoras() {
     }
-    public void ListarLaptop(){}
-    public void ListarServidor(){}
-    public void ListarImpresora(){}
+
+    public void ListarLaptop() {
+    }
+
+    public void ListarServidor() {
+    }
+
+    public void ListarImpresora() {
+    }
+
+    protected void eliminarComputadora(int id) {
+    }
+
+    protected void setModelo(String modelo) {
+    }
+
+    protected void setMarca(String marca) {
+    }
+
+    protected void setAno(int ano) {
+    }
+
+    protected void setSerial_number(String serialNumber) {
+    }
+
+    protected void setEstado(String estado) {
+    }
+
+    protected void setStock(int stock) {
+    }
 }
